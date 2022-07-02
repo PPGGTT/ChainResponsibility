@@ -20,13 +20,6 @@ class ChainResponsibilityApplicationTests {
 
     @Test
     public void test() throws JSONException {
-        JSONObject jsonObject = new JSONObject();
-        jsonObject.put("a",2);
-        jsonObject.put("b",3);
-        jsonObject.put("c",4);
-        Object c = jsonObject.get("c");
-        jsonObject.put("c",(int)c+2);
-        System.out.println(jsonObject);
         String s = "{\"a\":2,\"b\":3,\"c\":4}";
         String a = jsonProcessor.addValue(s, "d", 1);
         System.out.println(a);
